@@ -171,7 +171,6 @@ lines');
 console.log(`String
 multiple
 lines`);
-*/
 //_____________________________________________
 // Taking Decisions: if / else Statements
 
@@ -183,3 +182,108 @@ if (age >= 18) {
     const yearsLeft = 18 - age;
     console.log(`Sarah is too young. Wait another ${yearsLeft} years.`);
 }
+
+const birthYear = 2021;
+
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+} 
+console.log(century);
+//_____________________________________________
+// Challenge #2
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+if (BMIMark > BMIJohn) {
+    console.log("Mark's BMI is higher than John's!")
+} else {
+    console.log("John's BMI is higher than Mark's!")
+}
+
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+} else {
+    console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`)
+}
+//_____________________________________________
+//Type Conversion and Coercion
+
+//Type Conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18)
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+//Type Coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+
+let n = '1' + 1; // '11'
+n = n - 1;
+console.log(n);
+
+//_____________________________________________
+// Truthy and Falsey Values:
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jones'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 100;
+if (money) {
+    console.log("Don't spend it all");
+} else {
+    console.log('You should get a job!');
+}
+
+let height = 0;
+if (height) {
+    console.log('YAY! Height is defined')
+} else {
+    console.log('Height is UNDEFINED')
+}
+    */
+//_____________________________________________
+// Equality Operators == vs. ===:
+// === Strict Equality Operator (does not perform type coerciion. It only returns true when both values are exactly the same. Recommended to use. )
+// == The Loose Equality Operator (does type coercion. Avoid using if you can. Won't be as clean of code if you use.) 
+// !== Strict Not Equal Operator
+
+const age = '18';
+if (age === 18) console.log('You just became an adult. (strict)');
+
+if (age == 18) console.log('You just became an adult. (loose)');
+
+const favorite = Number (prompt("What's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) {
+    console.log('Cool! 23 is an amazing number!')
+} else if (favorite === 7) {
+    console.log(`7 is also a cool number`)
+} else if (favorite === 9) {
+    console.log(`9 is also a cool number`)
+} else {
+    console.log(`Number is not 23, 7 or 9`)
+}
+
+if (favorite !== 23) console.log(`Why not 23?`);

@@ -11,7 +11,7 @@ console.log(firstName);
 console.log(firstName);
 console.log(firstName);
 // ____________________________________________
-// Variable name conventions
+// Variable Name Conventions:
 let jonas_matilda = 'JM'
 let $function = 27;
 
@@ -56,7 +56,7 @@ job = 'teacher'
 // lastName = 'Muhlestein';
 // console.log(lastName);
 // ____________________________________________
-// Match operators
+// Match Operators:
 const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
@@ -68,7 +68,7 @@ const firstName = 'Jonas';
 const lastName = 'Schmedtmann';
 console.log(firstName + ' ' + lastName);
 // ____________________________________________
-// Assignment operators
+// Assignment Operators:
 let x = 10 + 5; //15
 x += 10; // x = x + 10 = 25
 x *= 4; // x = x * 4 = 100
@@ -77,7 +77,7 @@ x--; // x = x-1 = 100
 x--; // x = x-1 = 99
 console.log(x);
 // ____________________________________________
-// Comparison operators
+// Comparison Operators:
 console.log(ageJonas > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 18);
 
@@ -98,7 +98,7 @@ console.log(x, y);
 const averageAge = (ageJonas + ageSarah) / 2
 console.log(ageJonas, ageSarah, averageAge);
 // ____________________________________________
-// Assignment
+// Assignment:
 const country = 'United States';
 const continent = 'North America';
 let population = 326;
@@ -136,7 +136,7 @@ const description =
     language;
 console.log(description);
 // ____________________________________________
-// Coding Challenge #1
+// Challenge #1:
 
 const massMark = 78;
 const heightMark = 1.69;
@@ -150,7 +150,7 @@ const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
 _______________________________________________
-// Strings & Template Literals
+// Strings & Template Literals:
 const firstName = 'Rex';
 const job = 'QA Engineer';
 const birthYear = '1974';
@@ -172,7 +172,7 @@ console.log(`String
 multiple
 lines`);
 //_____________________________________________
-// Taking Decisions: if / else Statements
+// Taking Decisions (if / else Statements):
 
 const age = 15;
 
@@ -193,7 +193,7 @@ if (birthYear <= 2000) {
 } 
 console.log(century);
 //_____________________________________________
-// Challenge #2
+// Challenge #2:
 
 const massMark = 78;
 const heightMark = 1.69;
@@ -216,7 +216,7 @@ if (BMIMark > BMIJohn) {
     console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`)
 }
 //_____________________________________________
-//Type Conversion and Coercion
+//Type Conversion and Coercion:
 
 //Type Conversion
 const inputYear = '1991';
@@ -260,7 +260,6 @@ if (height) {
 } else {
     console.log('Height is UNDEFINED')
 }
-    */
 //_____________________________________________
 // Equality Operators == vs. ===:
 // === Strict Equality Operator (does not perform type coerciion. It only returns true when both values are exactly the same. Recommended to use. )
@@ -287,3 +286,78 @@ if (favorite === 23) {
 }
 
 if (favorite !== 23) console.log(`Why not 23?`);
+//_____________________________________________
+// Boolean Logic:
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log('Sarah is able to drive!')
+// } else {
+//     console.log('Someone else should drive...')
+// }
+    
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!')
+} else {
+    console.log('Someone else should drive...')
+}
+
+//_____________________________________________
+// Challenge #3:
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas) {
+    console.log('Dolphins win the trophy');
+} else if (scoreDolphins < scoreKoalas) {
+    console.log('Koalas win the trophy');
+} else {
+    console.log('Both win the trophy');
+}
+//_____________________________________________
+// Bonus #1:
+
+const scoreDolphins = (97 + 112 + 101) / 3;
+const scoreKoalas = (109 + 95 + 123) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >=100) {
+    console.log('Dolphins win the trophy');
+} else if (scoreDolphins < scoreKoalas && scoreKoalas >=100) {
+    console.log('Koalas win the trophy');
+} else {
+    console.log('Both win the trophy');
+}
+
+//_____________________________________________
+// Bonus #2:
+
+const scoreDolphins = (97 + 112 + 80) / 3;
+const scoreKoalas = (109 + 95 + 50) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+    console.log('Dolphins win the trophy');
+} else if (scoreDolphins < scoreKoalas && scoreKoalas >= 100) {
+    console.log('Koalas win the trophy');
+} else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+    console.log('Both win the trophy');
+}  else {
+    console.log('No one wins the trophy');
+}
+ */
+//_____________________________________________
+// The Switch Statement:
+
+
